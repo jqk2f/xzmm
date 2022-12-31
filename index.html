@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #999;
+        }
+
+        .w {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .top {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            background-color: #fafafa;
+        }
+
+        .top .float_left {
+            height: 30px;
+            float: left;
+        }
+
+        .top .float_left li {
+            float: left;
+            font-size: 12px;
+            padding-right: 15px;
+        }
+
+        .top .float_right {
+            height: 30px;
+            float: right;
+        }
+
+        .top .float_right li {
+            float: right;
+            font-size: 12px;
+            padding-left: 15px;
+        }
+
+        .body_1 {
+            width: 100%;
+            height: 120px;
+            line-height: 120px;
+        }
+
+        .body_1 .logo {
+            float: left;
+            width: 230px;
+            height: 80px;
+            margin: 20px 0;
+        }
+
+        .body_1 section {
+            width: 504px;
+            height: 30px;
+            margin: auto;
+        }
+
+        .body_1 section input {
+            width: 420px;
+            height: 30px;
+            font-size: 12px;
+            color: #999;
+            text-indent: 2em;
+        }
+
+        .body_1 section button {
+            width: 80px;
+            height: 34px;
+            border: 0;
+            background-color: #688CFF;
+        }
+
+        .body_1 span img {
+            float: right;
+        }
+
+        .body_1 .adress {
+            float: left;
+            width: 80px;
+            height: 30px;
+            margin-top: 45px;
+        }
+
+        .body_2 .nav {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            background-color: #688CFF;
+        }
+
+        .body_2 .nav span {
+            float: left;
+            font-size: 16px;
+        }
+
+        .body_2 .nav ul {
+            float: left;
+            width: 800px;
+            height: 50px;
+            margin-left: 100px;
+        }
+
+        .body_2 .nav ul li {
+            float: left;
+            padding-left: 30px;
+        }
+
+        .body_2 .nav a {
+            color: #fff;
+        }
+
+        .body_2 .nav .dl {
+            float: right;
+        }
+
+        .lbt {
+            width: 100%;
+            height: 420px;
+            background: url(./img/9b4cf1af-f84c-48a0-8f3d-b1585f07053f.jpg);
+        }
+
+        .lbt .fl {
+
+            width: 190px;
+            height: 400px;
+            float: left;
+            margin-top: 20px;
+            border-left: 1px solid #999;
+            border-right: 1px solid #999;
+            background-color: #fafafa;
+        }
+
+        .lbt .fl li {
+            width: 190px;
+            height: 60px;
+            line-height: 60px;
+            text-indent: 2em;
+            margin-bottom: -1px;
+            color: #6d6d6d;
+            font-size: 14px;
+            border-bottom: 1px solid rgb(217, 213, 213);
+        }
+
+        .lbt .fl span {
+            float: right;
+
+            color: #6d6d6d;
+            margin-top: -45px;
+            padding-right: 20px;
+        }
+
+        .lbt .fr {
+            float: right;
+            width: 210px;
+            height: 410px;
+            font-size: 12px;
+            color: #717171;
+            margin: 5px 0;
+            background-color: #fafafa;
+        }
+
+        .lbt .fr .head span {
+            display: inline-block;
+            width: 104px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .lbt .fr .jlt {
+            width: 180px;
+            height: 165px;
+            padding: 15px 0;
+            margin: auto;
+            border-bottom: 1px solid #d9d6d6;
+        }
+
+        .lbt .fr .sjkd {
+            margin: 8px 0;
+        }
+
+        .lbt .fr .sjkd span {
+            margin: 0 20px;
+        }
+
+        .lbt .fr section {
+            width: 180px;
+            height: 16px;
+            line-height: 16px;
+            margin: 15px auto;
+
+        }
+
+        .lbt .fr table {
+            width: 180px;
+            height: 75px;
+            margin: auto;
+        }
+
+        .lbt .fr table input {
+            width: 100px;
+            font-size: 12px;
+            color: #717171;
+            text-indent: 1em;
+        }
+
+        .lbt .fr table td[align=center] button {
+            width: 80px;
+            height: 30px;
+            background-color: #688CFF;
+            color: #fff;
+            border: 0;
+        }
+
+        footer {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="top">
+        <div class="w">
+            <ul class="float_left">
+                <li><a href="">收藏电信网</a></li>
+                <li><a href="">欢迎来到电信网站</a></li>
+                <li><a href="./login.html">登录</a></li>
+            </ul>
+            <ul class="float_right">
+                <li><a href="">我的电信网</a></li>
+                <li><a href="">中国电信APP</a></li>
+                <li><a href="">189邮箱</a></li>
+                <li><a href="">消费者帮助中心</a></li>
+                <li><a href="">代理商</a></li>
+                <li><a href="">合作招商</a></li>
+                <li><a href="">网站无故障</a></li>
+                <li><a href="">关怀专区</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 搜索栏 -->
+    <div class="w">
+        <div class="body_1">
+            <img src="./img/logo.png" alt="" class="logo">
+            <select class="adress">
+                <option value="">湖南</option>
+                <option value="">海南</option>
+                <option value="">江西</option>
+                <option value="">湖北</option>
+            </select>
+            <section>
+                <input type="text" value="请输入您要搜索的产品"><button>搜索</button>
+            </section>
+            <span>
+                <img src="./img/二维码.png" alt="">
+            </span>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="body_2">
+        <div class="nav">
+            <div class="w">
+                <span>全部产品及服务</span>
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">流量</a></li>
+                    <li><a href="">宽带</a></li>
+                    <li><a href="">用户中心</a></li>
+                    <li><a href="">自助服务</a></li>
+                    <li><a href="">资费专区</a></li>
+                    <li><a href="">服务监督</a></li>
+                    <li><a href="">全球业务</a></li>
+                </ul>
+                <a href="" class="dl">登录</a>
+            </div>
+        </div>
+        <div class="lbt">
+            <div class="w">
+                <ul class="fl">
+                    <li>套餐</li><span>></span>
+                    <li>宽带</li><span>></span>
+                    <li>智能</li><span>></span>
+                    <li>充值</li><span>></span>
+                    <li>费用</li><span>></span>
+                    <li>业务</li><span>></span>
+                </ul>
+                <article class="fr">
+                    <div class="head">
+                        <span>欢享服务</span><span>超值购</span>
+
+                    </div>
+                    <ul class="jlt">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="sjkd">
+                        <span>手机</span><span>宽带</span><span>固话</span>
+                    </div>
+                    <section>
+                        <input type="radio">银行卡充值 <input type="radio">卡密充值
+                    </section>
+
+                    <table cellspacing="8px">
+                        <tr>
+                            <td align="right">号码</td>
+                            <td><input type="text" value="输入手机号"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">金额</td>
+                            <td><input type="text" value="50元"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button>立即充值</button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </article>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="w">
+            <img src="./img/Snipaste_2022-12-29_20-46-51.png" alt="">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
